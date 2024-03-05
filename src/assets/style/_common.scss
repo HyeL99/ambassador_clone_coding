@@ -1,0 +1,21 @@
+.blurredContainer {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: -120%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: left 0.5s ease-in-out;
+  &.opened {
+    left: 0;
+  }
+}
+.arrow {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(45deg);
+  vertical-align: middle;
+}

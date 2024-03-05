@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+@import "./components";
+html {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+main {
+  flex-grow: 1;
+}
+header {
+  height: 55px;
+  position: relative;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  button {
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    height: calc(100% - 1rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 0.2rem;
+    padding: 0.5rem;
+    span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: #000;
+      &:nth-child(1){ grid-column: 2; }
+      &:nth-child(1){ grid-column: 3; }
+      &:nth-child(1){ grid-column: 4; }
+    }
+  }
+  a {
+    &.logo {
+      display: inline-block;
+      margin-top: -0.5rem;
+      img {
+        height: 55px;
+      }
+    }
+    &.reservation {
+      position: absolute;
+      top: 0.5rem;
+      right: 1rem;
+      height: calc(100% - 1rem);
+      display: flex;
+      align-items: center;
+      .arrow {
+        margin-left: 0.3rem;
+      }
+    }
+  }
+}
+
+footer {
+  &.footerWrap {
+    font-size: 0.55rem;
+    font-weight: 300;
+  }
+}
